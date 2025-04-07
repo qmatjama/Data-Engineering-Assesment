@@ -10,7 +10,7 @@ st.title("📊 Advanced Token Analytics Dashboard")
 
 @st.cache_data
 def load_data():
-    excel_path = "DE_Assesment_Results.xlsx"
+    excel_path = "../DE_Assesment_Results.xlsx"
     df = pd.read_excel(excel_path, sheet_name="Total_cleaned_records", parse_dates=["timestamp"])
     return df
 
